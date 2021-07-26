@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form-wix.css">
+    <script src="./form-wix.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <h2>WIX</h2>
+            <h1>Đăng ký</h1>
+            <i class="fas fa-times-circle"></i>
+        </div>
+
+        <div id="content">
+          <div class="content-top">
+              <p>Bạn đã có tài khoản ?</p>
+              <a href="#">Đăng nhập</a>
+          </div>
+          <div class="content-bottom">
+            <form action="#" class="form-regist">
+                <div class="form-email height71">
+                    <div class="test-title"></div>
+                    <input type="email" name="email" title="đay la title" class="set-css" id="email" placeholder="Nhập email">
+                    <div class="test-error"></div>
+                    <div id="border-error"></div>
+                </div>
+                <div class="form-re-email height71">
+                    <div class="test-title padingtop32"></div>
+                    <input type="email" name="re-email" class="set-css" id="re-email" placeholder="Nhập lại email">
+                    <div class="test-error"></div>
+                    <div id="border-error"></div>
+                </div>
+                <div class="form-password height71">
+                    <div class="test-title padingtop32"></div>
+                    <input type="password" name="password" class="set-css" id="password" placeholder="Nhập mật khẩu">
+                    <div class="test-error"></div>
+                    <div class="on-off">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <div id="border-error"></div>
+                    <div id="topic-password">
+                        <div class="topic">
+                            <p>sử dụng mật khẩu đề xuất</p>
+                            <p class="ispassword">hoanghuy</p>
+                        </div>
+                        <div class="describe-save">
+                            <p>Chrome sẽ lưu mật khẩu này trong Tài Khoản Google của bạn.Bạn sẽ không phải nhớ mật khẩu này</p>
+                        </div>
+                    </div>
+                    <div id="check-password">
+                        <p class="check-password-title">Phải có ít nhất 6 kí tự</p>
+                        <div class="bar-check">
+                            <p class="bar-check1"></p>
+                            <p class="bar-check2"></p>
+                            <p class="bar-check3"></p>
+                            <p class="bar-check4"></p>
+                        </div>
+                        <div class="test-check">
+                            <p class="test-check-title">tốt nhất là có</p
+                            <ul class="condition">
+                                <li class="condition1 conditionAll">
+                                    <p class="testP">chữ hoa và chữ thường</p>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="condition2 conditionAll">
+                                    <p class="testP">Biểu tượng(#$&)</p>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                                <li class="condition3 conditionAll">
+                                    <p class="testP">mật khẩu dài hơn</p>
+                                    <i class="fas fa-circle"></i>
+                                    <i class="fas fa-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-re-password height71">
+                    <div class="test-title padingtop32"></div>
+                    <input type="password" name="re-password" class="set-css" id="re-password" placeholder="Nhập lại lại mật khẩu">
+                    <div class="test-error"></div>
+                    <div id="border-error"></div>
+                </div>
+                <input type="submit" id="regist-submit"value="Đăng Ký">
+            </form>
+            <div class="content-ticker"></div>
+            <div class="content-icon">
+               <div class="content-icon-fb">
+                  <i class="fab fa-facebook-f"></i>
+                  <a href="#">Tiếp tục với Facebook</a>
+                </div>
+                <div class="content-icon-gg">
+                  <i class="fab fa-google"></i>
+                  <a href="#">Tiếp tục với Google</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="footer">
+          <div class="footer-top"> 
+                <p>*Khi đăng ký, bạn đồng ý với <a href="#"> Điều khoản sử dụng</a> 
+                    và nhận email và thông tin cập nhật của Wix, đồng thời xác nhận rằng bạn đã đọc <a href="">Chính sách quyền riêng tư</a> của chúng tôi.</p>
+          </div>
+          <div class="footer-center"></div>
+          <div class="footer-bottom">
+              <p>Trang web này được bảo vệ bởi reCAPTCHA Enterprise và áp dụng 
+                  <a href="#">Chính sách quyền riêng tư</a> 
+                  Và 
+                  <a href="#">Điều khoản sử dụng</a>
+                   của Google</p>
+         </div>
+         
+        </div>
+    </div>
+    <div id="title-box">
+        <!-- <div class="icon">
+            <i class="far fa-eye"></i>
+           
+        </div> -->
+       
+    </div>
+   
+    <script>
+        validator(
+          {   form :'#main',
+              local_error :'.test-error',
+              test_title : '.test-title',
+              rules:[
+                  validator.isRequired('#email'),
+                  validator.isEmail('#email'),
+                  validator.isRequired('#re-email'),
+                  validator.isRequired('#password'),
+                  validator.minLenght('#password',6),
+                  validator.isRequired('#re-password'),
+              ]
+          }
+        )
+    </script>
+</body>
+</html>
