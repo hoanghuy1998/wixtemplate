@@ -1,72 +1,76 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
 
-
-
-
-
-
-
-#main{
-   height: 2895px;
-   width: 100%;
+.clear {
+    clear: both;
+    ;
 }
-#header{
-   width:auto;
-   height:1080px;
-   /* background-image: url(../img/background.webp); */
-  
-   background-repeat: 1116px;
-   position: absolute   
-}
-#header .img-header{
+
+#main {
+    height: 2895px;
     width: 100%;
-    min-height:1080px;
-    background-size:cover;
 }
-#header .header-top{
+
+#header {
+    width: 100%;
+    height: 1080px;
+    background-repeat: 1116px;
+    position: absolute
+}
+
+#header .img-header {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+#header .header-top {
     width: auto;
-    height:83.67px;
-    display:flex;
-    position: absolute;
-    top:0px
-}
-#header .header-top-left{
+    height: 83.67px;
     display: flex;
-    margin-top:-5px ;
+    position: absolute;
+    top: 0px
 }
-#header .header-top-left a{
+
+#header .header-top-left {
+    display: flex;
+    margin-top: -5px;
+}
+
+#header .header-top-left a {
     font-size: 40px;
     padding-left: 83px;
     padding-top: 32px;
     color: white;
     text-decoration: none;
 }
-#header .header-top-left .p-sticker{
+
+#header .header-top-left .p-sticker {
     font-size: 37px;
     padding-top: 30px;
     padding-left: 24px;
     color: white;
 }
-#header .header-top-left .p-test{
+
+#header .header-top-left .p-test {
     font-size: 18px;
     padding-top: 43px;
     padding-left: 24px;
     color: white;
 }
 
-#header .header-top-left p{
+#header .header-top-left p {}
 
-}
-#header .header-top-left img{
+#header .header-top-left img {
     padding-top: 28px;
     margin-left: -8px;
     width: 184px;
     height: 48px;
 }
-#header .header-top-right{
+
+#header .header-top-right {
     font-size: 32px;
     color: white;
     border: solid white 1px;
@@ -77,224 +81,248 @@
     right: 80px;
     top: 30px;
     text-align: center;
-    display:block;
+    display: block;
     line-height: 100%;
 }
-#header .header-top-right:hover{
-    background:white;
 
+#header .header-top-right:hover {
+    background: white;
 }
-#header .header-top-right:hover a{
-    color:orange;
+
+#header .header-top-right:hover a {
+    color: orange;
 }
-#header .header-top-right a{
+
+#header .header-top-right a {
     font-size: 20px;
-    color:white;
+    color: white;
     text-decoration: none;
-    
 }
-#header .header-bottom h1{
+
+#header .header-bottom .div {
     position: absolute;
-    width: 522px;
-    height: 155px;
-    left: 25%;
-    bottom: 743px;
+    margin: 0px 17%;
+    width: 67%;
+    height: 300px;
+    top: 21%;
     text-align: center;
+}
+
+#header .header-bottom h1 {
+    height: 100%;
     line-height: 160%;
     display: block;
-    font-size: 70px;
+    font-size: 400%;
     color: white;
 }
-#header .header-bottom .btn-startNow{
-    font-size: 24px;
-    color: white;
-    width: 154px;
+
+#header .header-bottom .btn-startNow {
+    width: 16%;
     height: 52px;
     border-radius: 24px;
-    position: relative;
-    left: 41%;
-    bottom: 662px;
+    position: absolute;
+    bottom: 553px;
     text-align: center;
-    line-height: 206%;
+    line-height: 300%;
     background-color: #f48047;
     cursor: pointer;
+    margin: 0px 42%;
 }
-#header .header-bottom .btn-startNow a{
+
+#header .header-bottom .btn-startNow a {
     text-decoration: none;
     color: white;
+    font-size: 194%
 }
-#header .header-bottom:hover .btn-startNow{
+
+#header .header-bottom:hover .btn-startNow {
     background-color: white;
 }
-#header .header-bottom:hover .btn-startNow a{
+
+#header .header-bottom:hover .btn-startNow a {
     color: #f48047;
 }
 
-
-
-
-
-#leader{
-   position: absolute;
-   width: 100%;
-   min-height:665px;
-   top:1080px
+#leader {
+    position: absolute;
+    width: 100%;
+    min-height: 665px;
+    top: 1080px
 }
-#leader .leader-title{
+
+#leader .leader-title {
     text-align: center;
     margin: 110px 0px;
     margin-bottom: 88px;
     font-size: 24px;
 }
-#leader .leader-list{
+
+#leader .leader-list {
     display: flex;
 }
-#leader .list-form{
+
+#leader .list-form {
     width: 25%;
- 
 }
-#leader .list-form img{
-     padding-left: 40%;
-     padding-right: auto;
-     width: 70px;
+
+#leader .list-form img {
+    padding-left: 40%;
+    padding-right: auto;
+    width: 70px;
 }
-#leader .list-test{
+
+#leader .list-test {
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 16px;
 }
-#leader .list-form h3{
+
+#leader .list-form h3 {
     text-align: center;
-    font-size:24px;
+    font-size: 24px;
     margin-bottom: 16px;
 }
+
 #leader .leader-btn {
     width: 120px;
-    height:40px;
+    height: 40px;
     border: solid black 1px;
-    border-radius:24px;
+    border-radius: 24px;
     font-size: 24px;
     text-align: center;
-    line-height:150%;
+    line-height: 150%;
     margin-top: 50px;
     margin-left: 44%;
     background-color: orange;
-    color:white
+    color: white
 }
-#leader .leader-btn a{
-    color:white;
+
+#leader .leader-btn a {
+    color: white;
     text-decoration: none;
 }
-#leader .under-line{
-    margin-top: 80px;
-    margin-left: 22%;
-    margin-right: 22%;
-    opacity: 0.1;
+
+#leader .under-line {
+    opacity: 0.5;
+    border-bottom: solid black 1px;
+    width: 80%;
+    margin: 80px 10%;
 }
 
-
-#content{
+#content {
     position: absolute;
     top: 1708px;
     height: 908px;
     width: 100%;
-    
 }
-#content .content-test{
+
+#content .content-test {
     text-align: center;
 }
-#content .content-test h1{
+
+#content .content-test h1 {
     font-size: 53px;
     margin-top: 79px
 }
-#content .content-test h3{
+
+#content .content-test h3 {
     margin-top: 24px;
     font-size: 21px
 }
-#content .content-list{
+
+#content .content-list {
     display: flex;
     padding-left: 12px;
     padding-right: 12px;
     margin-top: 68px;
+    position: relative;
 }
-#content .content-child{
+
+#content .content-child {
     width: 33.33333333%;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin: 12px;
     height: 200px;
+    position: relative;
 }
-#content .content-child img{
+
+#content .content-child1 img,
+#content .content-child img {
     width: 100%;
     height: 200px;
+    position: relative;
 }
-#content .content-child:hover .interface{
-    display:block;
+
+#content .content-child:hover .interface {
+    display: block;
 }
-#content .interface{
-    background-color: rgba(0,0,0,.5);
+
+#content .interface {
+    background-color: rgba(0, 0, 0, .5);
     position: absolute;
-    top: 256px;
-    width: 30.3333333%;
+    bottom: 0px;
     height: 200px;
     border-radius: 8px;
     text-align: center;
-    line-height:186%;
-    font-size:20px;
+    line-height: 186%;
+    font-size: 20px;
     display: none;
+    width: 100%;
 }
-#content .border-btn{
+
+#content .border-btn {
     width: 120px;
     height: 40px;
     border: solid white 1px;
     border-radius: 24px;
     margin-top: 90px;
     margin-left: 32%;
-
 }
-#content .interface a{
+
+#content .interface a {
     text-decoration: none;
     color: white
 }
-#content .content-list1{
+
+#content .content-list1 {
     display: flex;
     padding-left: 12px;
     padding-right: 12px;
-    margin-top: 24px;
-
+    margin-top: 12px;
 }
-#content .content-child1{
+
+#content .content-child1 {
     width: 33.33333333%;
     margin-left: 12px;
     margin-right: 12px;
     height: 200px;
-}
-#content .content-child1 img{
-    width: 100%;
-    height: 200px;
-}
-#content .content-child1:hover .interface1{
-    display:block;
-}
-#content .interface1 a{
-   text-decoration: none;
-   color: white
+    position: relative;
+    margin-bottom: 12px;
 }
 
+#content .content-child1:hover .interface1 {
+    display: block;
+}
 
-#content .interface1{
-    background-color: rgba(0,0,0,.5);
+#content .interface1 a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+#content .interface1 {
+    background-color: rgba(0, 0, 0, .5);
     position: relative;
     bottom: 300px;
     width: 100%;
     height: 200px;
     border-radius: 8px;
     text-align: center;
-    line-height:186%;
-    font-size:20px;
+    line-height: 186%;
+    font-size: 20px;
     display: none;
 }
 
-#content .border1-btn{
+#content .border1-btn {
     width: 120px;
     height: 40px;
     border: solid white 1px;
@@ -302,14 +330,15 @@
     margin-top: 100px;
     margin-left: 32%;
     position: relative;
-    top:89px
-
+    top: 89px
 }
-#content .interface1 a{
+
+#content .interface1 a {
     text-decoration: none;
     color: white
- }
-#content .templates{
+}
+
+#content .templates {
     margin-left: 39%;
     text-align: center;
     margin-top: 125px;
@@ -318,9 +347,9 @@
     height: 51px;
     border-radius: 24px;
     background-color: orange;
-    
 }
-#content .templates a{
+
+#content .templates a {
     font-size: 26px;
     font-style: inherit;
     text-decoration: none;
@@ -328,50 +357,258 @@
     color: white;
 }
 
-
-#footer{
-  height:248.33px;
-  width: 100%;
-  position: relative;
-  top:2648.67px;
-  background-color: #eff1f2;
+#footer {
+    height: 265px;
+    width: 100%;
+    position: relative;
+    top: 2703.67px;
+    background-color: #eff1f2;
 }
-#footer .footer-title{
-   display: flex;
-   font-size: 38px;
+
+#footer .footer-title {
+    display: flex;
+    font-size: 38px;
     font-weight: unset;
     opacity: 0.7;
     text-align: center;
-    
 }
-#footer .footer-title h3{
+
+#footer .footer-title h3 {
     margin-top: 59px;
     margin-left: 20%;
 }
-#footer .footer-title a{
+
+#footer .footer-title a {
     margin-top: 44px;
     text-decoration: none;
     font-size: 63px;
     font-weight: bolder;
-    color:black
+    color: black
 }
-#footer .footer-test{
+
+#footer .footer-test {
     display: flex;
     margin-top: 74px;
     opacity: 0.6;
 }
-#footer .footer-privacy{
 
-}
-#footer .footer-ticker{
+#footer .footer-privacy {}
+
+#footer .footer-ticker {
     margin-left: 18px;
     margin-top: -15px;
     font-size: 40px;
     opacity: 0.5
 }
-#footer .footer-team{
+
+#footer .footer-team {
     margin-left: 32px;
 }
-#footer .footer-year{
+
+#footer .footer-year {
     margin-left: 60%;
+}
+
+
+/* pc :width >1024 */
+
+
+/* @media only screen and (min-width:1516px) {
+    #leader {
+        top: 120%
+    }
+} */
+
+
+/* @media only screen and (min-width:1260px) {
+    #leader {
+        top: 110%
+    }
+} */
+
+
+/* taplet:width >= 740px and width < 1024px */
+
+@media only screen and (max-width:1023px) and (min-width: 740px) {
+    #footer .footer-team,
+    #footer .footer-privacy {
+        width: 20%;
+        font-size: 24px;
+    }
+    #footer .footer-year {
+        margin-left: 0px;
+        width: 50%;
+        font-size: 24px;
+        padding-right: 16px;
+    }
+    #footer .footer-year p {
+        margin-left: 144px;
+    }
+}
+
+
+/* mobile:width < 740px */
+
+@media only screen and (max-width:739px) {
+    #header .header-top-left .p-test {
+        display: none;
+    }
+    #header .header-bottom h1 {
+        font-size: 350%;
+    }
+    #header .header-bottom .btn-startNow a {
+        font-size: 130%;
+    }
+    #leader .leader-list {
+        display: block;
+    }
+    #leader .list-form {
+        width: 100%;
+        display: block;
+    }
+    #leader .list-form img {
+        width: 50%;
+        margin: 0px 25%;
+        padding-left: 0px;
+    }
+    #leader .list-test {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    #leader .leader-btn {
+        margin: 32px 10%;
+        width: 80%;
+    }
+    #content {
+        top: 2935px
+    }
+    #content .content-test h3 {
+        width: 80%;
+        margin: 24px 10%;
+        font-size: 24px;
+    }
+    #content .content-list1,
+    #content .content-list {
+        display: block;
+    }
+    #content .content-child1,
+    #content .content-child {
+        width: 80%;
+        margin: 24px 10%;
+        height: 300px;
+    }
+    #content .content-child1 img,
+    #content .content-child img {
+        height: 300px;
+    }
+    #content .interface1,
+    #content .interface {
+        width: 100%;
+        height: 100%;
+    }
+    #content .interface1 {
+        bottom: 405px;
+    }
+    #content .border1-btn,
+    #content .border-btn {
+        top: 130px;
+        width: 60%;
+        margin-left: 20%;
+    }
+    #content .border-btn {
+        margin-top: 130px;
+    }
+    #footer {
+        top: 5512px;
+        height: 310px;
+    }
+    #footer .footer-title {
+        width: 90%;
+        margin: 0px 5%;
+    }
+    #footer .footer-title h3 {
+        margin-left: 0;
+        width: 70%;
+    }
+    #footer .footer-title a {
+        font-size: 100px;
+        color: red
+    }
+    #footer .footer-team,
+    #footer .footer-privacy {
+        width: 20%;
+        font-size: 24px;
+    }
+    #footer .footer-year {
+        margin-left: 0px;
+        width: 50%;
+        font-size: 24px;
+        padding-right: 16px;
+    }
+    #footer .footer-year p {
+        margin-left: 144px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #header .header-top {
+        width: 80%;
+        margin: 0px 10%;
+    }
+    #header .header-top-right {
+        display: none;
+    }
+    #header .header-top-left {
+        width: 100%;
+        margin: 0px auto;
+        justify-content: center;
+    }
+    #header .header-top-left a {
+        padding-left: 8px;
+    }
+    #header .header-bottom h1 {
+        font-size: 32px;
+    }
+    #header .header-bottom .btn-startNow {
+        width: 50%;
+        margin: 0px 25%;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    #header .header-top-left a {
+        padding-left: 8px;
+    }
+    #header .header-bottom h1 {
+        font-size: 32px;
+    }
+    #header .header-bottom .btn-startNow {
+        width: 50%;
+        margin: 0px 25%;
+    }
+    #content {
+        top: 2469px
+    }
+    #content .templates {
+        margin-left: 17%;
+    }
+    #footer {
+        top: 5170px;
+        height: 322px;
+    }
+    #footer .footer-title h3 {
+        font-size: 24px;
+    }
+    #header .header-top-right,
+    #header .header-top-left .p-test,
+    #footer .footer-ticker,
+    #footer .footer-team {
+        display: none;
+    }
+    #footer .footer-privacy {
+        margin-left: 32px;
+    }
+    #footer .footer-year p {
+        margin-left: 75px;
+    }
 }
